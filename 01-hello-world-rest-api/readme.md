@@ -78,3 +78,8 @@ Hello World
 ```
 -Dlogging.level.org.springframework=DEBUG
 ```
+### Running from cli
+mvn azure-webapp:config
+mvn azure-webapp:deploy  <--  create the jar before running this
+### Checking logs from cli
+az webapp log tail --name <app name> --resource-group <resource group name>
